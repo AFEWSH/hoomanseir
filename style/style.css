@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Yekan";
+    src: url(../fonts/Yekan/Yekan.ttf);
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Yekan';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+
+.btn-phone {
+    border: 2px solid #0372ba;
+    border-radius: 5px;
+    color: #fff;
+    transition: all ease .4s;
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    font-size: 18px;
+    gap: 5px;
+}
+
+.navbar-brand :nth-child(1) {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-brand :nth-child(2) {
+    font-size: 16px;
+    color: #e1e1e1;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-brand div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 11px;
+
+}
+
+.navbar-nav {
+    justify-content: center;
+}

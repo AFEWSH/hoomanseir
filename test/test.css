@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Yekan";
+    src: url(../fonts/Yekan/Yekan.ttf);
+}
+
+p { 
+    font-family: "Yekan";
+
+}
