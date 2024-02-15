@@ -3,7 +3,9 @@
     src: url(../fonts/Yekan/Yekan.ttf);
 }
 
-
+.navbar {
+    background-color: red;
+}
 
 body {
     margin: 0;
@@ -15,17 +17,17 @@ body {
     text-align: left;
 }
 
+.main-color {
+    color: #0372ba;
+}
+
 
 .btn-phone {
-    border: 2px solid #0372ba;
-    border-radius: 5px;
     color: #fff;
-    transition: all ease .4s;
-    display: flex;
-    align-items: center;
-    padding: 7px 10px;
-    font-size: 18px;
-    gap: 5px;
+    outline-color: #0372ba;
+}
+.btn-phone:hover {
+    background-color: #0372ba;
 }
 
 .navbar-brand :nth-child(1) {
@@ -56,4 +58,31 @@ body {
 
 .navbar-nav {
     justify-content: center;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    margin: 0 20px 0 20px;
+} 
+
+div [class=container-fluid] {
+    background-color: red;
+
+}
+
+.bi-person-fill {
+    color: #fff;
+    font-size: 30px;
+    margin: 13px 0 0 5px;
+}
+
+.btn-header {
+    align-items: center;
+}
+
+a [class=navbar-brand] > div {
+    margin: 25px 8px 0 0;
 }
