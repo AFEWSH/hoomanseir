@@ -3,8 +3,8 @@
     src: url(../fonts/Yekan/Yekan.ttf);
 }
 
-.navbar {
-    background-color: red;
+* {
+    text-align: right;
 }
 
 body {
@@ -22,12 +22,13 @@ body {
 }
 
 
-.btn-phone {
-    color: #fff;
+.btn:hover {
     outline-color: #0372ba;
+    background-color: #ffffff00;
 }
-.btn-phone:hover {
+.btn-phone {
     background-color: #0372ba;
+    color: #fff;
 }
 
 .navbar-brand :nth-child(1) {
@@ -64,7 +65,11 @@ body {
     justify-content: space-around;
 }
 
-.navbar-expand-lg .navbar-nav .nav-item {
+.nav-item1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-item1 {
     margin: 0 20px 0 20px;
 } 
 
@@ -85,4 +90,119 @@ div [class=container-fluid] {
 
 a [class=navbar-brand] > div {
     margin: 25px 8px 0 0;
+}
+
+.dropdown-item {
+    padding: 13px 20px;
+    transition: all ease .3s;
+}
+
+.dropdown-item:hover {
+    background: #f7f7f7;
+    color: #0372ba;
+}
+
+.dropdown-togglee {
+    padding: 13px 20px;
+    transition: all ease .3s;
+}
+
+.dropdown-togglee:hover {
+    background: #f7f7f7;
+    color: #0372ba;
+}
+
+.navbar-brand div {
+    padding: 22px 4px 0 0;
+}
+
+.btn-phone span {
+    font-size: 18px;
+}
+
+header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background: none;
+}
+
+/* banner */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.banner-text {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+}
+
+.banner-text h2 {
+    font-size: 60px;
+}
+.banner-text h6 {
+    font-size: 22px;
+}
+
+/* tour van */
+
+.tour-van {
+    height: 458px;
+}
+
+.tour-van-img { 
+    position: absolute;
+    height: 458px;
+    color: #0056b3;
+}
+
+.tour-van-img img { 
+    height: 458px;
+    filter: brightness(80%);
+    background-size:cover;
+    border-radius: 14px;
+    width: 100%;
+
+}
+
+.tour-van-text {
+    z-index: 2;
+    position: relative;
+    top: 367px;
+    left: 12px;
+    color: #fff;
+}
+
+.tour-van-text p:nth-child(1){
+    font-size: 26px;
+}
+
+.tour-van-text p:nth-child(2){
+    font-size: 18px;
+}
+
+.tour-van-text span {
+    font-size: 14px;
+}
+
+.col-3 {
+    padding: 0;
 }

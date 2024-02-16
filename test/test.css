@@ -1,9 +1,8 @@
-@font-face {
-    font-family: "Yekan";
-    src: url(../fonts/Yekan/Yekan.ttf);
+.tour-van-img { 
+    position: absolute;
 }
 
-p { 
-    font-family: "Yekan";
-
+.tour-van-text {
+    z-index: 2;
+    position: relative;
 }
