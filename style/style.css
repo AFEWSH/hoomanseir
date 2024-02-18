@@ -164,8 +164,15 @@ header {
 
 /* tour van */
 
+.tour-van-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .tour-van {
     height: 458px;
+    margin-top: 100px;
 }
 
 .tour-van-img { 
@@ -180,14 +187,13 @@ header {
     background-size:cover;
     border-radius: 14px;
     width: 100%;
+    overflow: hidden;
 
 }
 
 .tour-van-text {
     z-index: 2;
     position: relative;
-    top: 367px;
-    left: 12px;
     color: #fff;
 }
 
@@ -203,6 +209,50 @@ header {
     font-size: 14px;
 }
 
+.tour-van-text p {
+    text-align: center;
+}
+
 .col-3 {
     padding: 0;
+}
+
+.row {
+    margin-left:0 ;
+    margin-right:0 ;
+}
+
+.bi-arrow-left {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.btn-van { 
+    padding: 13px 41px;
+    background-color:#0372ba;
+    color: #fff;
+}
+.btn-van span{ 
+    font-size: 16px;
+}
+
+.tour-van-item1 p:nth-child(1) {
+    font-size: 46px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #0372ba;
+    padding-bottom: 7px;
+}
+
+.tour-van-item1 p:nth-child(2) {
+    margin-top: 5px;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.tour-van-item1 p:nth-child(3) {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }

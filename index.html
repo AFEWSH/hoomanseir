@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                     <img src="img/logo.png" alt="Logo" width="85" height="85" class="d-inline-block align-text-top">
@@ -87,7 +87,7 @@
               <div>
                 <form class="d-flex btn-header" role="search">
                   <i class="bi bi-person-fill"></i>
-                  <button type="button" class="btn btn-outline-primary btn-phone">
+                  <button type="button" class="btn btn-outline-primary btn-phone d-flex align-items-center justify-content-around">
                     <span>021-66848121</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
@@ -100,21 +100,24 @@
     </header>
 
     <main>
-      <section class="banner">
+      <section class="banner clearfix">
         <img src="img/bg.jpg">
         <div class="banner-text d-flex flex-column justify-content-center align-items-center">
           <h2 class="fw-bold">آژانس مسافرتی هومن سیر آریا</h2>
           <h6>تورهای داخلی و خارجی ، ویزا را با ما پیگیری کنید</h6>
         </div>
       </section>
-      <section class="tour-van row py-5">
-        <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+      <section class="tour-van row py-5 clearfix ">
+        <div class="col d-flex flex-column justify-content-center align-items-center  tour-van-item1">
           <p>تور وان ترکیه</p>
           <p>فراتر از تصوراتت برو</p>
           <p>تجربه ایده آل تور وان ترکیه خود را با ما کشف کنید.</p>
-          <button>مشاهده بیشتر</button>
+          <button class="btn btn-van d-flex align-items-center justify-content-center mx-2">
+            <span class="mx-2">مشاهده بیشتر</span>
+            <i class="bi bi-arrow-left"></i>
+            </button>
         </div>
-        <div class="col-3 tour-van-item">
+        <div class="col tour-van-item">
           <a class="tour-van-img" href="#">
           <img src="img/van1.jpg">
         </a>
@@ -123,22 +126,22 @@
             <p class="fw-bold"><span class="fw-normal">90 میلیون تومان</span> شروع قیمت از</p>
           </div>
         </div>
-        <div class="col-3 tour-van-item">
+        <div class="col tour-van-item">
           <a class="tour-van-img" href="#">
           <img src="img/van2.jpg">
         </a>
           <div class="d-flex flex-column justify-content-end align-items-center tour-van-text">
-            <p class="fw-bold">تور وان ترکیه</p>
-            <p class="fw-bold"><span class="fw-normal">90 میلیون تومان</span> شروع قیمت از</p>
+            <p class="fw-bold">تور وان ترکیه ویژه زمستان 1402</p>
+            <p class="fw-bold"><span class="fw-normal">77 میلیون تومان</span> شروع قیمت از</p>
           </div>
         </div>
-        <div class="col-3 tour-van-item">
+        <div class="col tour-van-item">
           <a class="tour-van-img" href="#">
           <img src="img/van3.jpg">
         </a>
           <div class="d-flex flex-column justify-content-end align-items-center tour-van-text">
-            <p class="fw-bold">تور وان ترکیه</p>
-            <p class="fw-bold"><span class="fw-normal">90 میلیون تومان</span> شروع قیمت از</p>
+            <p class="fw-bold">تور وان ترکیه ویژه نوروز</p>
+            <p class="fw-bold"><span class="fw-normal">120 میلیون تومان</span> شروع قیمت از</p>
           </div>
         </div>
       </section>
