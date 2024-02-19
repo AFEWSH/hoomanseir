@@ -1,8 +1,60 @@
-.tour-van-img { 
-    position: absolute;
+.hotel-van {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    gap : 20px 20px;
+}
+.hotel-van-item {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 13px;
 }
 
-.tour-van-text {
+.hotel-van-img { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .7s;
+}
+.hotel-van-item::before { 
+    background: -webkit-linear-gradient(top, transparent 50%, rgba(15, 15, 15, 0.99) 100%);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    content: "";
+    transition: .4s;
+}
+
+.hotel-van-img:hover { 
+    position: absolute;
+    width: 120%;
+    height: 120%;
+}
+
+.hotel-van-text {
     z-index: 2;
     position: relative;
+    color: #fff;
+}
+
+.hotel-van-text p:nth-child(1){
+    font-size: 26px;
+}
+
+.hotel-van-text p:nth-child(2){
+    font-size: 18px;
+}
+
+.hotel-van-text span {
+    font-size: 14px;
+}
+
+.hotel-van-text p {
+    text-align: center;
 }

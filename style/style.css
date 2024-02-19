@@ -7,6 +7,11 @@
     text-align: right;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 body {
     margin: 0;
     font-family: 'Yekan';
@@ -68,14 +73,20 @@ body {
 .nav-item1 {
     font-size: 20px;
     font-weight: bold;
-}
-.nav-item1 {
     margin: 0 20px 0 20px;
+}
+
+.nav-item1 > a{
+    color: #fff;
+    transition: all ease .3s;
 } 
 
-div [class=container-fluid] {
-    background-color: red;
-
+.nav-item1 > a:hover{
+    border-bottom: 1px solid #fff ;
+    color: #fff;
+} 
+.nav-item1 > a:active{
+    color: #fff;
 }
 
 .bi-person-fill {
@@ -165,30 +176,30 @@ header {
 /* tour van */
 
 .tour-van-item {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    position: relative;
+    height: 458px;
+    overflow: hidden;
+    border-radius: 13px;
 }
 
+
 .tour-van {
-    height: 458px;
-    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 20px 20px;
 }
 
 .tour-van-img { 
     position: absolute;
-    height: 458px;
-    color: #0056b3;
+    width: 100%;
+    height: 100%;
+    transition: .7s;
 }
 
-.tour-van-img img { 
-    height: 458px;
-    filter: brightness(80%);
-    background-size:cover;
-    border-radius: 14px;
-    width: 100%;
-    overflow: hidden;
-
+.tour-van-img:hover { 
+    position: absolute;
+    width: 120%;
+    height: 120%;
 }
 
 .tour-van-text {
@@ -213,15 +224,6 @@ header {
     text-align: center;
 }
 
-.col-3 {
-    padding: 0;
-}
-
-.row {
-    margin-left:0 ;
-    margin-right:0 ;
-}
-
 .bi-arrow-left {
     font-size: 18px;
     margin-top: 6px;
@@ -231,6 +233,7 @@ header {
     padding: 13px 41px;
     background-color:#0372ba;
     color: #fff;
+    border-radius: 5px;
 }
 .btn-van span{ 
     font-size: 16px;
@@ -255,4 +258,71 @@ header {
 .tour-van-item1 p:nth-child(3) {
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+/* hotel van */
+
+.hotel-van-item {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 13px;
+}
+
+.hotel-van-img { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .7s;
+}
+.hotel-van-item::before { 
+    background: -webkit-linear-gradient(top, transparent 50%, rgba(15, 15, 15, 0.99) 100%);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    content: "";
+    transition: .4s;
+}
+
+.hotel-van-img:hover { 
+    position: absolute;
+    width: 120%;
+    height: 120%;
+}
+
+.hotel-van-text {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+}
+
+.hotel-van-text p:nth-child(1){
+    font-size: 26px;
+}
+
+.hotel-van-text p:nth-child(2){
+    font-size: 18px;
+}
+
+.hotel-van-text span {
+    font-size: 14px;
+}
+
+.hotel-van-text p {
+    text-align: center;
+}
+
+.hotel-van-title h2::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 200px;
+    background-color: #0372ba;
+    margin-top: 20px;
+    display: block;
 }
