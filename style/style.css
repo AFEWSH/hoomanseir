@@ -390,10 +390,6 @@ font-weight: bold;
     color: #fff;
 }
 
-.hotel-van-text {
-    font-weight: bold;
-}
-
 .tours-item > div {
 }
 
@@ -426,7 +422,217 @@ font-weight: bold;
 
 .tours-itemm {
     transition: all ease .4s;
+    border-radius: 13px;
 }
 .tours-itemm:hover {
     box-shadow: 4px 14px 28px rgb(0 0 0 / 10%);
+}
+
+.btn-tours {
+    border: 1px solid #0372ba;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 5px;
+    transition: all ease .4s;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0372ba;
+}
+
+.btn-tours:hover {
+    border: 1px solid #0372ba;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 5px;
+    transition: all ease .4s;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0372ba;
+}
+
+.btn-tours-outline {
+    border: 1px solid #0372ba;
+    color: #0372ba;
+    padding: 8px 30px;
+    border-radius: 5px;
+    transition: all ease .4s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-tours-outline:hover {
+    border: 1px solid #0372ba;
+    color: #0372ba;
+    padding: 8px 30px;
+    border-radius: 5px;
+    transition: all ease .4s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* about us */
+
+.Attributes {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+}
+
+.Attribute {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #212529;
+}
+
+.about-text p {
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    color: #777;
+    line-height: 28px;
+    text-align: right;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.Attribute-text h6 {
+    color: #212529;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.Attribute-text p {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    color: #777;
+    line-height: 28px;
+    text-align: right;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.Attribute-icon {
+    width: 12%;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid #0372ba;
+    background: rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.Attribute-icon svg {
+    color: #0372ba;
+    width: 20px;
+}
+
+.about-img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(90%);
+    border-radius: 14px;
+    transition: all ease .4s;
+    box-shadow: -4px -4px 16px rgba(139,62,234,.08), 4px 14px 28px rgba(139,148,250,.07);
+    vertical-align: middle;
+    border-style: none;
+}
+
+.about-img img:hover {
+    transform: scale(0.95);
+}
+
+/* blog */
+
+.blog-item {
+    position: relative;
+    height: 534px;
+    overflow: hidden;
+    border-radius: 13px;
+}
+
+.blog-item::before { 
+    background: -webkit-linear-gradient(top, transparent 50%, rgba(15, 15, 15, 0.99) 100%);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    content: "";
+    transition: .4s;
+}
+
+.blog-img { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .7s;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.blog-img:hover { 
+    position: absolute;
+    width: 120%;
+    height: 120%;
+}
+
+.btn-blog-item { 
+    padding: 13px 41px;
+    background-color:#0372ba;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn-blog-item span{ 
+    font-size: 16px;
+}
+
+.blog-text {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+}
+
+.blog-text {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.blog-text p:nth-child(1){
+    color: #fff;
+    font-family: "yekanbakhBold";
+    margin-bottom: 0;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.blog-text p:nth-child(2){
+    -webkit-line-clamp: 3;
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 0;
+
 }
