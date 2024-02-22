@@ -183,11 +183,11 @@ header {
 }
 
 
-.tour-van {
+/* .tour-van {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap : 20px 20px;
-}
+} */
 
 .tour-van-img { 
     position: absolute;
@@ -607,6 +607,12 @@ font-weight: bold;
 .btn-blog-item span{ 
     font-size: 16px;
 }
+.btn-blog-item:hover {
+    padding: 13px 41px;
+    background-color:#0372ba;
+    color: #fff;
+    border-radius: 5px;
+}
 
 .blog-text {
     z-index: 2;
@@ -635,4 +641,185 @@ font-weight: bold;
     line-height: 27px;
     margin-bottom: 0;
 
+}
+
+/* newsletter */
+
+.newsletter {
+    background-color: #f3f6fd;
+    padding: 60px 0;
+}
+
+.newsletter-text {
+
+}
+
+.newsletter-text > h6 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-family: bold;
+    color: #222;
+}
+
+.newsletter-text > p{
+    font-size: 1rem;
+    text-align: right;
+    color: #222;
+    margin-bottom: 0;
+}
+
+
+.newsletter-boxes {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.newsletter-boxes > label > svg {
+    position: relative;
+    top: 50%;
+    right: 20px;
+    fill: #495057;
+}
+
+.newsletter-boxes > label > input {
+    padding-right: 3rem;
+    border-radius: 0.25rem;
+    font-size: 17px;
+    height: 55px;
+    border: 2px dashed rgba(221,221,221,.4588235294);
+    box-shadow: 0 1px 13px 0 rgb(0 0 0 / 5%);
+    width: 100%;
+}
+
+.newsletter-icon > svg {
+    fill: #0372ba;
+}
+
+.btn-newsletter {
+    background: #0372ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 0.25rem;
+}
+
+/* footer */
+
+footer {
+    padding-top: 74px;
+}
+
+.title-footer {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 2px solid #0372ba;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    gap: 5px;
+}
+
+.contact P {
+    color: #222;
+    text-align: right;
+}
+
+.contact a {
+    color: #0372ba;
+    transition: all ease .4s;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 14px;
+}
+
+.social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #0372ba;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.social > a > svg {|
+    width: 20px;
+    transition: all ease .4s;
+
+}
+
+.social > a > img {
+    fill: #0372ba;
+    width: 16px;
+    transition: all ease .4s;
+
+}
+
+.col2 .nav-item {
+    margin: 12px 0;
+}
+
+.col3 .nav-item {
+    margin: 12px 0;
+}
+
+.nav-link {
+    color: #222;
+}
+
+.col4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.certificate {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+.certificate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brand {
+    background: #f3f6fd;
+    padding: 10px 0;
+}
+
+.brand a {
+    color: #434343;
+}
+
+.brand p {
+    color: #727272;
+    transition: all ease .3s;
+    margin: 0 4px;
+    font-size: 14px;
 }
