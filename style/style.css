@@ -173,6 +173,79 @@ header {
     font-size: 22px;
 }
 
+/* search box */
+
+.search-box {
+    position: relative;
+    z-index: 100;
+    margin-top: -210px;
+}
+
+.search-box-parent {
+    box-shadow: 0 1px 13px 0 rgb(0 0 0 / 5%);
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.search-box-tour {
+    border-radius: 6px;
+    padding: 0.7rem 1.8rem;
+    border: 1px solid #0372ba;
+    color: #fff;
+    font-size: 20px;
+    background-color: #0372ba;
+    cursor: pointer;
+}
+
+.search-box-visa {
+    border-radius: 6px;
+    padding: 0.7rem 1.8rem;
+    border: 1px solid #0372ba;
+    color: #0372ba;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.checkbox {
+    border-radius: 20px;
+    border: 1px solid #ccc ;
+}
+
+.dakheli {
+    border-radius: 20px;
+    color: #fff;
+    background-color: #0372ba;
+    padding: 3px 25px;
+    cursor: pointer;
+    margin: 2px 5px;
+}
+
+.khareji {
+    border-radius: 20px;
+    padding: 3px 25px;
+    cursor: pointer;
+    margin: 2px 5px;
+}
+
+.information {
+    padding: 25px;
+    border: none;
+    background-color: #f5edfd;
+    cursor: pointer;
+}
+
+.information:focus {
+    border-color: #fff;
+    box-shadow: none;
+}
+
+.dokmeh {
+    padding: 13px 60px;
+    background-color:#0372ba;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
 /* tour van */
 
 .tour-van-item {
@@ -181,13 +254,6 @@ header {
     overflow: hidden;
     border-radius: 13px;
 }
-
-
-/* .tour-van {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap : 20px 20px;
-} */
 
 .tour-van-img { 
     position: absolute;
