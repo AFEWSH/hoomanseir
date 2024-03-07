@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+      <div class="container">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                   <a class="navbar-brand" href="#">
@@ -28,15 +29,15 @@
                     <a class="nav-link" aria-current="page" href="#">خانه</a>
                   </li>
                     <li class="nav-item nav-item1 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle">
                             تور
                         </a>
                         <ul class="dropdown-menu">
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle dropdown-togglee" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <li class="nav-item dropdown nav-item11">
+                            <a class="nav-link dropdown-toggle dropdown-togglee" href="#">
                               داخلی
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu1">
                                 <li><a class="dropdown-item" href="#">تهران</a></li>
                                 <li><a class="dropdown-item" href="#">مشهد</a></li>
                                 <li><a class="dropdown-item" href="#">اصفهان</a></li>
@@ -44,11 +45,11 @@
                                 <li><a class="dropdown-item" href="#">نمایش همه</a></li>
                             </ul>
                         </li>                            
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle dropdown-togglee" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown nav-item11">
+                          <a class="nav-link dropdown-toggle dropdown-togglee" href="#">
                               خارجی
                           </a>
-                          <ul class="dropdown-menu">
+                          <ul class="dropdown-menu1">
                             <li><a class="dropdown-item" href="#">مالزی</a></li>
                             <li><a class="dropdown-item" href="#">ترکیه</a></li>
                             <li><a class="dropdown-item" href="#">کانادا</a></li>
@@ -96,6 +97,7 @@
               </div>
             </div>
           </nav>
+        </div>
     </header>
     <main>
       <section class="banner">
@@ -105,27 +107,6 @@
           <h6>تورهای داخلی و خارجی ، ویزا را با ما پیگیری کنید</h6>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <section class="search-box">
         <div class="container">
           <div class="search-box-parent p-4">
@@ -181,29 +162,6 @@
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <section class="tour-van py-5">
         <div class="container">
           <div class="row">
@@ -212,7 +170,12 @@
           <p>تور وان ترکیه</p>
           <p>فراتر از تصوراتت برو</p>
           <p>تجربه ایده آل تور وان ترکیه خود را با ما کشف کنید.</p>
-          <a class="btn-van">مشاهده بیشتر <i class="bi bi-arrow-left"></i> </a> 
+          <a class="btn-van d-flex justify-content-around align-items-center">
+            <p>مشاهده بیشتر</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>         
+           </a> 
         </div>
       </div>
       <div class="col-3">
@@ -221,7 +184,7 @@
           img/van1.jpg" class="tour-van-img">
           <div class="d-flex flex-column justify-content-end align-items-center tour-van-text">
             <p>تور وان ترکیه</p>
-            <p><span>90 میلیون تومان</span> شروع قیمت از</p>
+            <p> شروع قیمت از <span>90 میلیون تومان</span></p>
           </div>
         </a>
       </div>
@@ -229,8 +192,8 @@
         <a class="tour-van-item d-flex flex-column justify-content-end align-items-center">
           <img src="img/van2.jpg" class="tour-van-img">
           <div class="d-flex flex-column justify-content-end align-items-center tour-van-text">
-            <p>تور وان ترکیه</p>
-            <p><span>90 میلیون تومان</span> شروع قیمت از</p>
+            <p>تور وان ترکیه ویژه زمستان 1402</p>
+            <p> شروع قیمت از <span>77 میلیون تومان</span></p>
           </div>
         </a>
       </div>
@@ -238,8 +201,8 @@
         <a class="tour-van-item d-flex flex-column justify-content-end align-items-center">
           <img src="img/van3.jpg" class="tour-van-img">
           <div class="d-flex flex-column justify-content-end align-items-center tour-van-text">
-            <p>تور وان ترکیه</p>
-            <p><span>90 میلیون تومان</span> شروع قیمت از</p>
+            <p>تور وان ترکیه ویژه نوروز</p>
+            <p> شروع قیمت از <span>120 میلیون تومان</span></p>
           </div>
         </a>
       </div>
@@ -254,7 +217,7 @@
         <div class="row">
           <div class="col-6">
         <a class="hotel-van-item d-flex flex-column justify-content-end align-items-start">
-          <img src="img/hotel6.jpg" class="tour-van-img">
+          <img src="img/hotel6.jpg" class="hotel-van-img">
           <div class="d-flex flex-column justify-content-end align-items-center hotel-van-text mx-3">
             <p>بررسی رزرویشن هتل های وان ترکیه</p>
           </div>
@@ -262,7 +225,7 @@
       </div>
       <div class="col-3">
         <a class="hotel-van-item d-flex flex-column justify-content-end align-items-start">
-          <img src="img/hotel2.jpg" class="tour-van-img">
+          <img src="img/hotel2.jpg" class="hotel-van-img">
           <div class="d-flex flex-column justify-content-end align-items-center hotel-van-text mx-3">
             <p>بررسی هتل های ایتالیا</p>
           </div>
@@ -270,7 +233,7 @@
       </div>
       <div class="col-3">
         <a class="hotel-van-item d-flex flex-column justify-content-end align-items-start">
-          <img src="img/hotel4.jpg" class="tour-van-img">
+          <img src="img/hotel4.jpg" class="hotel-van-img">
           <div class="d-flex flex-column justify-content-end align-items-center hotel-van-text mx-3">
             <p>بررسی و آنالیز هتل های کوهستانی</p>
           </div>
@@ -280,7 +243,7 @@
         <div class="hotel-van2 row py-2">
           <div class="col-3">
             <a class="hotel-van-item d-flex flex-column justify-content-end align-items-start">
-              <img src="img/hotel7.jpg" class="tour-van-img">
+              <img src="img/hotel7.jpg" class="hotel-van-img">
               <div class="d-flex flex-column justify-content-end align-items-center hotel-van-text mx-3">
                 <p>بررسی هتل های 5 ستاره</p>
               </div>
@@ -288,7 +251,7 @@
           </div>
           <div class="col-6">
             <a class="hotel-van-item d-flex flex-column justify-content-end align-items-start">
-              <img src="img/hotel5.jpg" class="tour-van-img">
+              <img src="img/hotel5.jpg" class="hotel-van-img">
               <div class="d-flex flex-column justify-content-end align-items-center hotel-van-text mx-3">
                 <p>بررسی هتل های ساحلی</p>
               </div>
@@ -296,7 +259,7 @@
           </div>
           <div class="col-3">
             <a class="hotel-van-item d-flex flex-column justify-content-end align-items-start">
-              <img src="img/blog1.jpg" class="tour-van-img">
+              <img src="img/blog1.jpg" class="hotel-van-img">
               <div class="d-flex flex-column justify-content-end align-items-center hotel-van-text mx-3">
                 <p>بررسی هتل های سواحل و جزیره </p>
               </div>
@@ -456,8 +419,11 @@
               </div>
           </div>
           <div class="d-flex justify-content-center align-items-center my-3">
-            <a class="btn-van">مشاهده بیشتر <i class="bi bi-arrow-left"></i> </a> 
-          </div>
+            <a class="btn-van d-flex justify-content-around align-items-center">
+              <p>مشاهده بیشتر</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+              </svg>          </a>           </div>
         </div>
 
 
@@ -478,7 +444,7 @@
         <div class="row py-2">
           <div class="col-3">
             <a class="blog-item d-flex flex-column justify-content-end align-items-start">
-              <img src="img/blog2.jpg" class="tour-van-img">
+              <img src="img/blog2.jpg" class="blog-img">
               <div class="d-flex flex-column justify-content-end align-items-start blog-text mx-3">
                 <p>بررسی هتل های 5 ستاره</p>
                 <p>                                ویژگی بهترین تور گروهی تجربه‌های یک مناسبت مسافرتی منحصر به فرد و ممتاز را برای شرکت‌کنندگان فراهم می‌کند. این نوع تورها از چند جنبه می‌توانند برجسته باشند. اولاً، ارتباط اجتماعی و تعامل با دیگر شرکت‌کنندگان این تورها را تحت تأثیر قرار می‌دهد و افراد را با فرصتی برای اشتراک تجربیات و خاطرات خوب در سفر آشنا می‌کند. همچنین، بهترین تورهای گروهی دارای برنامه‌های متنوع و متناسب با سلیقه‌های مختلف شرکت‌کنندگان هستند، به طوری که افراد می‌توانند فعالیت‌هایی که به علاقه خود مرتبط هستند را انتخاب کنند
@@ -513,8 +479,12 @@
           </div>
       </div>
       <div class="d-flex justify-content-center align-items-center my-3">
-      <a class="btn-blog-item">مشاهده بیشتر <i class="bi bi-arrow-left"></i> </a> 
-    </div>
+        <a class="btn-van d-flex justify-content-around align-items-center">
+          <p>مشاهده بیشتر</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>         
+         </a>     </div>
     </div>
       </section>
 
