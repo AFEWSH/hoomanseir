@@ -203,6 +203,14 @@ header {
     background: none;
 }
 
+
+.scrolled {
+    background-color: #0372ba;
+    position: fixed;
+    z-index: 1;
+}
+
+
 /* banner */
 
 .banner {
@@ -900,9 +908,13 @@ padding: 0 25px 20px 25px;
     width: 100%;
 }
 
-.newsletter-boxes > div > svg {
+.newsletter-boxes > div {
     position: relative;
-    top: 50%;
+}
+
+.newsletter-boxes > div > svg {
+    position: absolute;
+    top: 25%;
     right: 20px;
     fill: #495057;
 }

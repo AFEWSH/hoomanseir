@@ -1,3 +1,5 @@
-var scroll_top = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+var scroll_top = $(window).scrollTop();
 
-console.log(scroll_top);
+if (scroll_top > 100) {
+    $("#scrolled div").addClass("scrolled");
+}
