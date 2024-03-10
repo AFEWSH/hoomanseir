@@ -207,9 +207,27 @@ header {
 .scrolled {
     background-color: #0372ba;
     position: fixed;
-    z-index: 1;
+    z-index: 200;
+    top: 0;
+    width: 100%;
+    transition: all ease .4s;
 }
 
+.scrolled .navbars {
+    z-index: 201;
+}
+
+.scrolled img {
+    filter: drop-shadow(2px 2px 5px #fff);
+}
+
+.scrolled .btn-phone {
+    border-color: #fff;
+}
+
+.scrolled > .container > .navbar {
+    padding: 0;
+}
 
 /* banner */
 
